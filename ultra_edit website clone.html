@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <style>
+      .logo {
+        /* padding : 15px; */
+        margin: 15px;
+        width: 40px;
+        /* height : 23px; */
+        /* background-color:blue; */
+        align-items: center;
+      }
+      .logo img {
+        height: 50px;
+        gap: 34px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .right ul {
+        display: flex;
+      }
+      .right ul li {
+        font-size: 17px;
+        padding: 2px;
+        list-style: none;
+        display: flex;
+        align-items: center; /* use this to align the arror at center */
+        cursor: pointer; /* amazing try this  */
+      }
+      .lan {
+        height: 10px;
+        width: 10px;
+        margin: 10px;
+      }
+      .lan {
+        height: 2px;
+      }
+      .right ul li span {
+        padding: 0 5px;
+      }
+      .first {
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 23px;
+        font-family: ui-monospace;
+      }
+      .first span {
+        /* display:flex; */
+        font-size: 40px;
+        /* gap:10px; */
+      }
+      .first span img {
+        width: 81px;
+        margin: 0px 25px;
+      }
+      .first p {
+        width: 47vw;
+        font-size: 20px;
+        text-align: center;
+      }
+      .btn {
+        background-color: #00b6d1;
+        color: white;
+        border: 2px solid white;
+        /* height: 42px; */
+        /* width: 278px; */
+        padding: 12px 17px;
+        border-radius: 10px;
+        font-size: 17px;
+        font-weight: bold;
+      }
+      .download {
+        margin:50px 0px 0px 0px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .download span {
+        padding: 10px;
+      }
+      .second {
+        /* font-size:15px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .btn-green {
+        font-size: 15px;
+        border: 1px solid #5cb85c;
+        background-color: #5cb85c;
+        color: white;
+        height: 30px;
+        border-radius:6px;
+        
+      }
+      .btn-blue {
+        font-size: 15px;
+        border: 1px solid #00b6d1;
+        background-color: #00b6d1;
+        color: white;
+        text-decoration:none;
+        height: 30px;
+        border-radius:6px;
+      }
+      /* .grid {
+        padding: 23px;
+        background-color: aliceblue;
+      } */
+      .item-lang {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 36px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .grid{
+        margin:40px 10px;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        row-gap:100px;
+        column-gap:40px;
+        /* background-color:yellow; */
+      }
+      .item{
+        border-radius:8px;
+        background-color: #e5eaed;
+        padding: 17px;
+      }
+      .download span img{
+        height:40px;
+      }
+      @media screen and (max-width:900px)
+    {
+      .grid{
+        grid-template-columns: 1fr;
+      }
+    }
+     
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><img src="logo/UE-Logo-1.webp" alt="" /></div>
+        <div class="right">
+          <ul>
+            <li>
+              <span>Product</span
+              ><svg
+                width="20"
+                height="20"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.924 9.617A1 1 0 0 0 16 9H8a1 1 0 0 0-.707 1.707l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0 .217-1.09zM12 12.586 10.414 11h3.172z"
+                  style="fill: black"
+                  data-name="Down"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>For business</span
+              ><svg
+              width="20"
+              height="40"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.924 9.617A1 1 0 0 0 16 9H8a1 1 0 0 0-.707 1.707l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0 .217-1.09zM12 12.586 10.414 11h3.172z"
+                  style="fill: black"
+                  data-name="Down"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>Resources</span
+              ><svg
+              width="20"
+              height="40"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.924 9.617A1 1 0 0 0 16 9H8a1 1 0 0 0-.707 1.707l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0 .217-1.09zM12 12.586 10.414 11h3.172z"
+                  style="fill: black"
+                  data-name="Down"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>Supprot</span
+              ><svg
+              width="20"
+              height="40"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.924 9.617A1 1 0 0 0 16 9H8a1 1 0 0 0-.707 1.707l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0 .217-1.09zM12 12.586 10.414 11h3.172z"
+                  style="fill: black"
+                  data-name="Down"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>Our company</span
+              ><svg
+              width="20"
+              height="40"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.924 9.617A1 1 0 0 0 16 9H8a1 1 0 0 0-.707 1.707l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0 .217-1.09zM12 12.586 10.414 11h3.172z"
+                  style="fill: black"
+                  data-name="Down"
+                />
+              </svg>
+            </li>
+            <li>
+              <img
+                src="logo/translate.png"
+                height="30"
+                style="position: relative; left: 40px; top: 0px"
+              />
+            </li>
+            <li>
+              <img
+                src="logo/search.png"
+                height="30"
+                style="position: relative; left: 60px; top: 0px"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="first">
+        <span
+          >Download <b>UltraEdit</b> for Windows
+          <img
+            width="60"
+            src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
+            alt=""
+        /></span>
+        <p>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows version of the text editor.
+        </p>
+        <div>
+          <button class="btn">Download Mac or Linux Version</button>
+        </div>
+      </section>
+    </main>
+    <section class="second">
+      <div class="download">
+        <span><img src="logo/UE_logo_icon_white.png" alt=""> </span>
+        <span style="font-size: 25px"><b>Download UltraEdit</b></span>
+        <span>v2024.2 (released 2024-12-20) | Hotfix information </span>
+      </div>
+      <div class="grid">
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+        <div class="item">
+          <div class="item-lang">English</div>
+          <button class="btn-blue"><a href="software file/ue_english_64 (1).exe" style="color:white;text-decoration:none;">Download 32-bit</a></button>
+          <button class="btn-green"><a href="software file/ue_english_64 (1).exe"style="color:white;text-decoration:none;">Download 64-bit</a></button>
+        </div>
+      </div>
+    </section>
+  </body>
+  
+</html>
